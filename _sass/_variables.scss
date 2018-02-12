@@ -55,9 +55,13 @@ $font-weight-bold: 800;
 
 
 // Type Client specific
+//------------------------------
+
+// type
 $clientfont-family-base: 'Raleway', serif;
 $clientfont-family-title: $myfont-family-base;
 
+// sizes
 $client-font-size-base: 16px;
 $client-lineheight-base: 1.6em;
 $client-font-weight-base: 400;
