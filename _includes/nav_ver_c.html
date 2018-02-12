@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light flex-column custom-nav-ver">
+
+    <a class="navbar-brand" href="#">MyClient</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-column" id="mainNavigation">
+
+    <ul class="navbar-nav flex-column">
+{%- for nav-item in site.data.navigation_syl %}
+    
+    {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
+    {%- if nav-item.folder %}
+        <li class="nav-item dropdown {{ item_classes }}">
+                <a class="nav-link dropdown-toggle" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ nav-item.name }}
+                </a>
+                {%- include navigation-from-folder-v.html nav-item=nav-item %}
+        </li>
+    {%- else %}
+    <li class="nav-item {{ item_classes }}">
+            <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">
+                {{ nav-item.name }}
+            </a>
+    </li>
+    {%- endif %}
+
+{%- endfor %}
+    </ul>
+
+    </div>
+</nav>

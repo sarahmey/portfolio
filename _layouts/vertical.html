@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }} | Huistijlgids - Mijn Klant</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+</head>
+<body data-spy="scroll" data-target="#toc">  
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+            {% include nav_ver_c.html %}
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 order-md-12 pt-5">
+            <nav id="toc" data-toggle="toc"></nav>
+        </div>
+        <main class="col-12 col-md-6 col-lg-8 order-md-1 pt-5">
+            {{ content }}
+        </main>
+    </div>
+</div>
+
+{% include footer.html %}
+{% include scripts-bottom.html %}
+
+</body>
+</html>

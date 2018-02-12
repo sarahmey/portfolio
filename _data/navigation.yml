@@ -1,0 +1,20 @@
+- title: Home
+  url: /index.html
+- title: DVD
+  url: /dvd
+  sublinks:
+    - title: Dexter
+      url: /dvd/dexter.html
+    - title: dr. Who
+      url: /dvd/drwho.html
+    - title: Narcos
+      url: /dvd/narcos.html
+    - title: Game of Thrones
+      url: /dvd/game.html
+    - title: Strange Things
+      url: /dvd/strangethings.html
+- title: winkelmandje
+  url: /winkelmandje/index.html
+- title: contact
+  url: /contact.html
+
