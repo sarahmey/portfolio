@@ -1,0 +1,100 @@
+// default-styling
+
+body {
+    font-family: $myfont-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    line-height: $lineheight-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $myfont-family-title;
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    font-weight: $font-weight-light;
+    font-size: 4rem;
+    color: $color-grey-2;
+}
+h2 {
+    font-weight: $font-weight-light;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+}
+h3, h4, h5, h6 {
+    font-size: 1rem;
+    margin: 2rem 0 0;
+}
+a {
+    text-decoration: none;
+    color: $body-link;
+    border-bottom: dotted 1px $body-link;
+    &:hover{
+        color: $body-link;
+        text-decoration: none;
+        border-bottom: solid 1px $body-link;
+    }
+    &:active{
+        background-color: $body-link;
+        color: $color-white;
+    }
+    &:focus{}
+}
+blockquote {
+    padding-left: 24px;
+    border-left: 2px solid $mycolor-5;
+}
+
+// ongeordende lijstjes met een ander symbool of kleur
+main ul {
+  list-style: none;  
+  margin: 0 0 1em;
+  padding: 0;
+  li {
+    padding-left: 25px;
+    text-indent: -25px;
+    &:before {
+        content:'\2022';
+        color: $mycolor-5;
+        margin-right: 18px;
+    }    
+  }
+}
+
+//geordende lijstjes met een ander symbool of kleur
+main ol {
+    list-style: none;  
+    margin: 0 0 1em;
+    padding: 0;
+    counter-reset: i 0;
+    li {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-bottom: 0.5rem;
+      &:before {
+        counter-increment: i;
+        content: counter(i);    
+        padding: 3px 6px;
+        margin-right: 5px;
+        border-radius: 5px;
+        background-color: $mycolor-5;
+        color: $color-white;
+        font-family: $myfont-family-title;
+        font-weight: $font-weight-bold;
+      }    
+    }
+  }
+
+//forms 
+button, a.btn {
+    
+    &:hover{}
+    &:active{}
+    &:focus{}
+}
+input[type=text], textarea {
+
+}

@@ -1,3 +1,63 @@
+/* Navigation
+---------------------------------------------
+*/
+.navbar a {
+    border: none;
+}
+
+/* FOOTER
+----------------------------------------------
+sticked to the bottom with small content pages
+*/
+html {
+    height: 100%;
+  }
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+
+.bh-absolute-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 footer {
-    background-color: red;
+    background-color: $mycolor-2;
+    color: $color-white;
+    a {
+        color: $color-white;
+        &:hover {
+            
+        }
+    }
+}
+
+/* BACK TO TOP
+-------------------------
+*/
+#to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:$mycolor-3; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  //padding: 15px; /* Some padding */
+  width: 40px;
+  height: 40px;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  &:hover {
+    background-color:$mycolor-5; 
+  }
 }
