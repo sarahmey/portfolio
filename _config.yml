@@ -4,13 +4,13 @@
 
 # Site settings
 # ─────────────
-baseurl: /1718-BaP # the subpath of your site, e.g. /blog
+baseurl: /1718-3CMO-BaP-sarahmey/ # the subpath of your site, e.g. /blog
 # host   : 127.0.0.1
 # port   : 4000
 
 # Custom Site variables
 # ─────────────────────
-title: 1718 BaP CMO
+title: 1718 BaP CMO Sarah Meysman
 
 # Build settings
 # ──────────────
