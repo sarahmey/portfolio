@@ -18,10 +18,10 @@
   permalink: logo/
   # fa-icon: icon-graduation-cap
 
-- name: Huisstijltoepassingen
-  description: Huisstijltoepassingen
-  folder: pages/huisstijltoepassingen/
-  permalink: huisstijltoepassingen/
+- name: Toepassingen
+  description: Toepassingen
+  folder: pages/toepassingen/
+  permalink: toepassingen/
   # fa-icon: icon-info
 
 - name: Styleguide
