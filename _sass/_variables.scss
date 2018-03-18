@@ -40,7 +40,10 @@ $clientcolor-5:rgba(204,82,51,1);
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet');
 
 // Client specific
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet');
+
+// Client specific
+@import url('href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet');
 
 // type
 $myfont-family-base: 'Roboto', sans-serif;
@@ -58,12 +61,21 @@ $font-weight-bold: 800;
 //------------------------------
 
 // type
-$clientfont-family-base: 'Raleway', serif;
-$clientfont-family-title: $myfont-family-base;
+$clientfont-family-base: 'Baloo', sans-serif;
+$clientfont-family-title: $clientfont-family-base;
 
 // sizes
 $client-font-size-base: 16px;
 $client-lineheight-base: 1.6em;
 $client-font-weight-base: 400;
-$client-font-weight-light: 200;
-$client-font-weight-bold: 800;
+
+// type  --  IS DIT JUIST ??
+$clientfont2-family-base: 'Arvo', serif;
+$clientfont2-family-title: $clientfont2-family-base;
+
+// sizes
+$font-size-base: 16px;
+$lineheight-base: 1.6em;
+$font-weight-base: 400;
+$font-weight-light: 200;
+$font-weight-bold: 800;
