@@ -7,16 +7,21 @@
   permalink: /index 
   # fa-icon: icon-info
 
+- name: Huisstijlelementen
+  description: Huisstijlelementen
+  folder: pages/huisstijlelementen/
+  permalink: huisstijlelementen/
+
 - name: Logo
   description: Logo
   folder: pages/logo/
   permalink: logo/
   # fa-icon: icon-graduation-cap
 
-- name: Kleur
-  description: Kleur
-  folder: pages/kleur/
-  permalink: kleur/
+- name: Huisstijltoepassingen
+  description: Huisstijltoepassingen
+  folder: pages/huisstijltoepassingen/
+  permalink: huisstijltoepassingen/
   # fa-icon: icon-info
 
 - name: Styleguide
