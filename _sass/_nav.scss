@@ -22,6 +22,10 @@
             position: static !important;
             display: block  !important;
         }
+        .navbar-brand{
+            background-image: url( '/logo.png');
+            text-indent: -999px;
+        }
      }
 
  }
