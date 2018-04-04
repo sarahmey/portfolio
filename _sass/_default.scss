@@ -7,6 +7,7 @@ body {
     line-height: $lineheight-base;
     background-color: $body-bg;
     color: $body-color;
+    margin: 20px 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,4 +119,8 @@ input[type=text], textarea {
 }
 #kleur-oranje{
     background-color: $clientcolor-5;
+}
+
+img{
+    margin: 5px;
 }
