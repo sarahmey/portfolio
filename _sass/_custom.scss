@@ -28,15 +28,16 @@ body {
 }
 
 footer {
-    background-color: $color-grey-3;
-    color: $color-white;
-    a {
-        color: $mycolor-3;
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none; 
-        }
-    }
+  padding-top:20px;
+  background-color: $color-grey-3;
+  color: $color-white;
+  a {
+      color: $mycolor-3;
+      text-decoration: underline;
+      &:hover {
+          text-decoration: none; 
+      }
+  }
 }
 
 /* BACK TO TOP
