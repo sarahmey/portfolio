@@ -28,12 +28,13 @@ body {
 }
 
 footer {
-    background-color: $mycolor-5;
+    background-color: $color-grey-3;
     color: $color-white;
     a {
-        color: $color-white;
+        color: $mycolor-3;
+        text-decoration: underline;
         &:hover {
-            
+            text-decoration: none; 
         }
     }
 }
