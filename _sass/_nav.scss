@@ -30,13 +30,20 @@
  --------------------------- */
  #toc {
     margin-bottom: 1em;
-    li{
-        display: inline;
-    }
+    height: 50px;
     .nav {
         display: block;
     }
-
+    li{
+        display: block;
+        float: left;
+        border-right: 1px solid $color-grey-2;
+        border-bottom: none;
+        &:before {
+            content: '';
+        }
+    }
  } 
+
 
  

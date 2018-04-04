@@ -5,7 +5,7 @@ body {
     font-weight: $font-weight-base;
     font-size: $font-size-base;
     line-height: $lineheight-base;
-    background-color: $body-bg;
+    background-color: $color-white;
     color: $body-color;
     margin: 20px 100px;
 }
@@ -104,6 +104,7 @@ input[type=text], textarea {
 .kleuren{
     width: 100%;
     padding: 20px;
+    color: $color-white;
 }
 #kleur-blauw{
     background-color: $clientcolor-1;
@@ -130,14 +131,3 @@ img{
     color: $color-white;
 }
 
-#toc{
-    height: 50px;
-    li{
-        float: left;
-        border-right: 1px solid $color-grey-2;
-        border-bottom: none;
-        &:before {
-            content: '';
-        }
-    }
-}
