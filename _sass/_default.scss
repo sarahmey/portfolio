@@ -98,3 +98,24 @@ button, a.btn {
 input[type=text], textarea {
 
 }
+
+
+.kleuren{
+    width: 100%;
+    padding: 20px;
+}
+#kleur-blauw{
+    background-color: $clientcolor-1;
+}
+#kleur-geel{
+    background-color: $clientcolor-2;
+}
+#kleur-groen{
+    background-color: $clientcolor-3;
+}
+#kleur-rood{
+    background-color: $clientcolor-4;
+}
+#kleur-oranje{
+    background-color: $clientcolor-5;
+}
