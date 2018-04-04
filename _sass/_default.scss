@@ -129,3 +129,12 @@ img{
     background-color: $mycolor-5;
     color: $color-white;
 }
+
+#toc{
+    li{
+        float: left;
+        &:before {
+            content: '';
+        }
+    }
+}
