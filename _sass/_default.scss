@@ -32,7 +32,7 @@ h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: $body-link;
-    border-bottom: dotted 1px $body-link;
+    border-bottom: solid 1px $body-link;
     &:hover{
         color: $body-link;
         text-decoration: none;
@@ -105,6 +105,13 @@ input[type=text], textarea {
     width: 100%;
     padding: 20px;
     color: $color-white;
+    h3{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    a{
+        color: $color-grey-1;
+    }
 }
 #kleur-blauw{
     background-color: $clientcolor-1;
