@@ -30,8 +30,11 @@
  --------------------------- */
  #toc {
     margin-bottom: 1em;
+    li{
+        display: inline;
+    }
     .nav {
-        display: none;
+        display: block;
     }
 
  } 
