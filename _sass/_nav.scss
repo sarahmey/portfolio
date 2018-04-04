@@ -37,10 +37,18 @@
     li{
         display: block;
         float: left;
-        border-right: 1px solid $color-grey-2;
-        border-bottom: none;
+        text-indent: 0;
+        padding-left: 0;
         &:before {
             content: '';
+        }
+    }
+    a{
+        border-right: 1px solid $color-grey-2;
+        border-bottom: none;
+        &:hover{
+            border-bottom: 1px solid $mycolor-5;
+            border-left: none;
         }
     }
  } 
