@@ -131,8 +131,11 @@ img{
 }
 
 #toc{
+    height: 50px;
     li{
         float: left;
+        border-right: 1px solid $color-grey-2;
+        border-bottom: none;
         &:before {
             content: '';
         }
