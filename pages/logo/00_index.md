@@ -5,9 +5,9 @@ published: true
 title: Logo intro
 ---
 
-Het logo van vzw Tamos bestaat in twee variaties, die elk in kleur, in zwart en in wit bestaan. Op deze manier kan voor elk gebruik de goede variatie van het logo gekozen worden. Let echter goed op bij het gebruik van het logo dat dit niet verkeerd gebeurd. Er zijn verschillende regels opgesteld om verkeerd gebruik van het logo te voorkomen. Deze zijn te vinden bij <a href="{{ '/logo/3_dosdonts.html' | relative_url }}">do's en don'ts bij het gebruik van het logo</a>.
+Het logo van vzw Tamos bestaat in twee variaties, die elk in kleur, in zwart en in wit bestaan. Op deze manier kan voor elk gebruik de goede variatie van het logo gekozen worden. Let echter goed op bij het gebruik van het logo dat dit niet verkeerd gebeurd. Er zijn verschillende regels opgesteld om verkeerd gebruik van het logo te voorkomen. Deze zijn te vinden bij <a href="{{ '/logo/dosdonts.html' | relative_url }}">do's en don'ts bij het gebruik van het logo</a>.
 
-Hieronder is nog wat informatie te vinden over het logo, technische specificaties zijn te vinden bij <a href="{{'/logo/1_variaties.html' | relative_url }}"> variaties</a>. Bij <a href="{{'/logo/2_gebruik.html' | relative_url }}"> gebruik</a> is te vinden welke variatie van het logo u in specifieke gevallen. 
+Hieronder is nog wat informatie te vinden over het logo, technische specificaties zijn te vinden bij <a href="{{'/logo/variaties.html' | relative_url }}"> variaties</a>. Bij <a href="{{'/logo/gebruik.html' | relative_url }}"> gebruik</a> is te vinden welke variatie van het logo u in specifieke gevallen. 
 
 <img src="{{ '/images/logo.png' | relative_url }}" alt="Logo verticaal" class="w-50">
 
