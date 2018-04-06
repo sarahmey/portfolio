@@ -2,6 +2,7 @@
  -------------------------------------------------- */
  @media (min-width: 768px) {
     .custom-nav-ver {
+        background-color:$color-grey-1;
         .collapse {
             display: block;
         }
@@ -23,8 +24,10 @@
             display: block  !important;
         }
         .navbar-brand{
-            background-image: url( '../images/logo.png');
+            background-image: url( '/images/logo.png');
             text-indent: -999px;
+            background-size:100px;
+            background-repeat: no-repeat;
         }
     }
  }

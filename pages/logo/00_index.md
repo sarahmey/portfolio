@@ -2,7 +2,7 @@
 # layout: vertical
 permalink: logo/
 published: true
-title: Logo intro
+title: Logo
 ---
 
 Het logo van vzw Tamos bestaat in twee variaties, die elk in kleur, in zwart en in wit bestaan. Op deze manier kan voor elk gebruik de goede variatie van het logo gekozen worden. Let echter goed op bij het gebruik van het logo dat dit niet verkeerd gebeurd. Er zijn verschillende regels opgesteld om verkeerd gebruik van het logo te voorkomen. Deze zijn te vinden bij <a href="{{ '/logo/dosdonts.html' | relative_url }}">do's en don'ts bij het gebruik van het logo</a>.

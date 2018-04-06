@@ -1,9 +1,7 @@
 /* Navigation
 ---------------------------------------------
 */
-.navbar a {
-    border: none;
-}
+
 
 /* FOOTER
 ----------------------------------------------
@@ -18,6 +16,7 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
+    background-color:$color-white;
   }
 
 .bh-absolute-bottom {
