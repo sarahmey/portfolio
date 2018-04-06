@@ -8,16 +8,17 @@
 sticked to the bottom with small content pages
 */
 html {
-    height: 100%;
-  }
+  height: 100%;
+  
+}
 
 body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-    background-color:$color-white;
-  }
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-color:$color-white;
+}
 
 .bh-absolute-bottom {
   position: absolute;
@@ -32,11 +33,11 @@ footer {
   color: $color-white;
   margin-top: 50px;
   a {
-      color: $mycolor-3;
-      text-decoration: underline;
-      &:hover {
-          text-decoration: none; 
-      }
+    color: $mycolor-3;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none; 
+    }
   }
 }
 
@@ -151,8 +152,4 @@ main[class^="col"]{
 
 nav[data-toggle='toc'] .nav .nav>li {
   display: none;
-}
-
-.open{
-  background-color:red;
 }
