@@ -20,7 +20,8 @@ h1 {
     font-size: 3rem;
     color: $color-white;
     background-color: $mycolor-3;
-    padding-left: 20px;
+    padding-top:20px;
+    padding-bottom:20px; 
 }
 h2 {
     font-weight: $font-weight-light;
@@ -107,6 +108,3 @@ button, a.btn {
 input[type=text], textarea {
 
 }
-
-
-
