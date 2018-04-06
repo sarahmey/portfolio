@@ -6,3 +6,5 @@ title: Do's and don'ts
 ---
 
 # Een logo gebruik je juist
+
+geldt uiteraard ook voor de horizontale variant
