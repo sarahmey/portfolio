@@ -133,8 +133,10 @@ img{
     margin: 5px 0;
 }
 
-.paginatitel{
-    background-color: $mycolor-5;
-    color: $color-white;
-}
 
+.download{
+    img{
+        margin: 0 5 px;
+        width: 20px;
+    }
+}
