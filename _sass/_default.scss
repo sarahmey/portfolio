@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-weight: $font-weight-bold;
-    font-size: 4rem;
-    color: $color-grey-2;
+    font-size: 3rem;
+    color: $color-white;
     background-color: $mycolor-1;
 }
 h2 {
@@ -26,7 +26,14 @@ h2 {
     font-size: 2rem;
     margin: 2rem 0 1rem;
 }
-h3, h4, h5, h6 {
+
+h3{
+    font-weight: $font-weight-bold;
+    font-size: 1.5 rem;
+    margin: 2rem 0 1rem;
+}
+
+h4, h5, h6 {
     font-size: 1rem;
     margin: 2rem 0 0;
 }
@@ -101,51 +108,4 @@ input[type=text], textarea {
 }
 
 
-.kleuren{
-    width: 100%;
-    padding: 20px;
-    color: $color-white;
-    margin-bottom: 50px;
-    h3{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    a{
-        color: $color-grey-1;
-    }
-}
-#kleur-blauw{
-    background-color: $clientcolor-1;
-}
-#kleur-geel{
-    background-color: $clientcolor-2;
-}
-#kleur-groen{
-    background-color: $clientcolor-3;
-}
-#kleur-rood{
-    background-color: $clientcolor-4;
-}
-#kleur-oranje{
-    background-color: $clientcolor-5;
-}
 
-img{
-    margin: 5px 0;
-}
-
-
-.download{
-    border: 1px solid $mycolor-3;
-    img{
-        margin-right: 15px;
-        width: 20px;
-    }
-    p{
-        margin-bottom: 0.5rem;
-    }
-}
-
-main{
-    margin-bottom: 50px;
-}
