@@ -24,7 +24,7 @@
             display: block  !important;
         }
         .navbar-brand{
-            background-image: url( '/images/logo.png');
+            background-image: url( '../../images/logo.png');
             text-indent: -999px;
             background-size:100px;
             background-repeat: no-repeat;
@@ -34,9 +34,7 @@
 
  /* table of contents
  --------------------------- */
- nav[data-toggle='toc'] .nav .active .nav {
-    display: none;
-  }
+
   
 
  #toc {
@@ -45,10 +43,10 @@
 
     
     .nav {
-        display: block;
+        display: flex;
     }
     li{
-        display: block;
+        // display: block;
         float: left;
         text-indent: 0;
         padding-left: 0;

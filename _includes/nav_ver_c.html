@@ -10,14 +10,17 @@
     <ul class="navbar-nav flex-column">
 {%- for nav-item in site.data.navigation %}
     
-    {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
+    {%- capture item_classes %}
+    active
+        {% if page.url equals nav-item.permalink %}open{% endif %}
+    {% endcapture %}
     {%- if nav-item.folder %}
-        <li class="nav-item dropdown {{ item_classes }}">
-                <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" id="navbarDropdown" title="{{ nav-item.name }}" aria-haspopup="true" aria-expanded="true">
-                    {{ nav-item.name }}
-                </a>
-                {%- include navigation-from-folder-v.html nav-item=nav-item %}
-        </li>
+    <li class="nav-item dropdown {{ item_classes }}">
+            <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" class="navbarDropdown" title="{{ nav-item.name }}" aria-haspopup="true" aria-expanded="true">
+                {{ nav-item.name }}
+            </a>
+            {%- include navigation-from-folder-v.html nav-item=nav-item %}
+    </li>
     {%- else %}
     <li class="nav-item {{ item_classes }}">
             <a class="nav-link" href="{{ nav-item.permalink | relative_url }}" title="{{ nav-item.name }}">

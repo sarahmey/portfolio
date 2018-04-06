@@ -142,7 +142,16 @@ main{
 }
 
 
-#toc, .inhoud{
+.inhoud{
   margin-left: 100px;
   margin-right: 200px;
+}
+
+
+nav[data-toggle='toc'] .nav .nav>li {
+  display: none;
+}
+
+.open{
+  background-color:red;
 }
