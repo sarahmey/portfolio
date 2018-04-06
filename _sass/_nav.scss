@@ -34,9 +34,16 @@
 
  /* table of contents
  --------------------------- */
+ nav[data-toggle='toc'] .nav .active .nav {
+    display: none;
+  }
+  
+
  #toc {
     margin-bottom: 1em;
     height: 50px;
+
+    
     .nav {
         display: block;
     }

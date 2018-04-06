@@ -102,8 +102,8 @@ img{
 
 
 .download{
-  border: 1px solid $mycolor-3;
-  border-radius: 20px;
+  border: 3px solid $mycolor-3;
+  border-radius: 25px;
   a{
     text-decoration:none;
     &:hover{
@@ -143,6 +143,6 @@ main{
 
 
 #toc, .inhoud{
-  margin-left: 10px;
+  margin-left: 100px;
   margin-right: 200px;
 }
