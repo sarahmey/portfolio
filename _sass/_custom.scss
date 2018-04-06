@@ -104,12 +104,25 @@ img{
 
 .download{
   border: 1px solid $mycolor-3;
+  border-radius: 5px;
+  width: 400 px;
+  a{
+    text-decoration:none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
   img{
       margin-right: 15px;
       width: 20px;
   }
   p{
       margin-bottom: 0.5rem;
+      padding: 0 10px;
+  }
+  .logoalle{
+    background-color: $mycolor-3;
+    color: white;
   }
 }
 
