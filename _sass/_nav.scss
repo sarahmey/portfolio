@@ -23,11 +23,17 @@
             position: static !important;
             display: block  !important;
         }
-        .navbar-brand{
+        .brandlogo{
             background-image: url( '../../images/logo.png');
-            text-indent: -999px;
-            background-size:100px;
+            background-size:80%;
             background-repeat: no-repeat;
+            height: 170px;
+            width: 100%;
+            background-color:white;
+            background-position: center;
+        }
+        .navbar-brand{
+            text-indent: -999px;
         }
     }
  }

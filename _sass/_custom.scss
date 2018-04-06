@@ -134,11 +134,12 @@ img{
   }
 }
 
-main{
+main[class^="col"]{
   margin-bottom: 50px;
   padding: 0;
   margin-right:0;
   margin-left:0;
+  padding-right:0; padding-left:0;
 }
 
 

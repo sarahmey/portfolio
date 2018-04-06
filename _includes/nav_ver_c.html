@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light flex-column custom-nav-ver">
-
-    <a class="navbar-brand" href="#">Tamos</a>
+    <div class="brandlogo">
+        <a class="navbar-brand" href="{{ '/index.html' | relative_url }} ">Tamos</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,7 +13,7 @@
     
     {%- capture item_classes %}
     active
-        {% if page.url equals nav-item.permalink %}open{% endif %}
+        {% if page.url contains nav-item.permalink %}open{% endif %}
     {% endcapture %}
     {%- if nav-item.folder %}
     <li class="nav-item dropdown {{ item_classes }}">
