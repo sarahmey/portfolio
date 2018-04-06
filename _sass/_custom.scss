@@ -104,7 +104,7 @@ img{
 
 .download{
   border: 1px solid $mycolor-3;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 400 px;
   a{
     text-decoration:none;
@@ -119,10 +119,20 @@ img{
   p{
       margin-bottom: 0.5rem;
       padding: 0 10px;
+      &:hover{
+        background-color: $mycolor-3;
+        color: white;
+      }
   }
   .logoalle{
-    background-color: $mycolor-3;
-    color: white;
+    p{
+      background-color: $mycolor-3;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
 
