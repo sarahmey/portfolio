@@ -104,10 +104,15 @@ footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $mycolor-1;
+  // -webkit-transition: all 0.3s ease;
+  // -moz-transition: all 0.3s ease;
+  // -ms-transition: all 0.3s ease;
+  // -o-transition: all 0.3s ease;
+  // transition: all 0.3s ease; // waarom werkt dit niet??
+  background: $mycolor-2;
   border-radius: 3px; 
   &:hover{
-    background: $mycolor-2;
+    background: $mycolor-4;
   }
 }
 // EINDE SCROLLBAR //
@@ -246,4 +251,8 @@ nav[data-toggle='toc'] .nav .nav>li {
 .donts .col-6{
   margin-top:30px;
   font-size: 0.9rem;
+}
+
+.kaderrand{
+  border:1px solid $color-grey-2;
 }

@@ -17,6 +17,7 @@
             height: 60%; /* NOG AANPASSEN!! AAAAAA */
             width: 250px;
             top: 200px;
+            margin-top:6px;
 
             //vanaf hier
             -webkit-transition: all 0.5s ease-in-out; /* Safari */
@@ -24,7 +25,6 @@
             &:hover{
                 overflow: auto;
             }
-
             // tot hier wegdoen als het niet gefikst geraakt
         }
         .dropdown-menu {
