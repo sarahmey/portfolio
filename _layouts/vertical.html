@@ -13,13 +13,16 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="linkernavigatie col-12 col-md-3 col-lg-3">
+        <div class="linkernavigatie">
             {% include nav_ver_c.html %}
         </div>
-        <main class="col-12 col-md-9 col-lg-9">
-            <h1 class="text-center pt-3">{{page.title}}</h1>
-            <nav id="toc" data-toggle="toc"></nav>
-            <div class="inhoud">  {{ content }}  </div>
+        <main class="col-12">
+            <div class="rechts">
+                <h1 class="text-center pt-5 pb-5">{{page.title}}</h1>
+                <nav id="toc" data-toggle="toc"></nav>
+                <div class="inhoud">  {{ content }}  </div>
+                
+            </div>
         </main>
     </div>
 </div>
