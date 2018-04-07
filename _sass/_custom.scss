@@ -50,6 +50,12 @@ footer {
 -------------------------
 */
 #to-top {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -65,8 +71,20 @@ footer {
   height: 40px;
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+
+  svg{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
   &:hover {
     background-color:$mycolor-4; 
+    svg{
+      position:relative;
+      top:-5px;
+    }
   }
 }
 
