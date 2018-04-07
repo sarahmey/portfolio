@@ -107,6 +107,8 @@
         position: fixed;
         height:100vh;
         z-index:30;
+        -webkit-box-shadow: 0 -1px 6px $color-grey-2;
+        box-shadow: 0 -1px 6px $color-grey-2;
     }
  }
 
