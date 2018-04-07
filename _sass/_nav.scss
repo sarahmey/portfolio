@@ -17,6 +17,7 @@
             height: 60%; /* NOG AANPASSEN!! */
             width: 250px;
             top: 200px;
+            margin-top:20px;
         }
         .dropdown-menu {
             position: static !important;
@@ -44,6 +45,7 @@
             width: 100%;
             background-color:white;
             background-position: center;
+            padding-bottom: 20px;
         }
         .navbar-brand{
             text-indent: -999px;
@@ -100,16 +102,23 @@
         &:before {
             content: '';
         }
+        &:first-child{
+            a{
+                border-left:none;
+            }
+        }
     }
     a{
         border-left: 1px solid $color-grey-2;
         border-bottom: none;
         text-decoration:none;
         &:hover{
-            border-bottom: 1px solid $mycolor-5;
-            // border-left: none;
+            border-bottom: 1px solid $mycolor-3;
+            color: $mycolor-3;
         }
     }
+    
+
  } 
 #toc > ul.nav > li:only-child {
     display: none;

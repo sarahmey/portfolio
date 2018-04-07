@@ -88,8 +88,26 @@ footer {
   }
 }
 
+//    SCROLLBAR   //
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-grey-1; 
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $mycolor-1; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $mycolor-2; 
+}
+// EINDE SCROLLBAR //
 
 .kleuren{
   width: 100%;
