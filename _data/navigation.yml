@@ -29,3 +29,9 @@
   # folder: pages/stijlgids
   permalink: /stijlgids
   # fa-icon: icon-info
+
+- name: Bronbestanden
+  description: Bronbestanden
+  folder: pages/bronbestanden/
+  permalink: bronbestanden/
+  # fa-icon: icon-info
