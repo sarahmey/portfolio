@@ -146,8 +146,7 @@ img{
 
 // DOWNLOADS //
 .download{
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
+  
   border: 3px solid $mycolor-3;
   border-radius: 28px;
   a{
@@ -158,16 +157,18 @@ img{
       width: 20px;
   }
   p{
-      margin-bottom: 0;
-      padding: 10px 20px;
-      &:hover{
-        background-color: $mycolor-1;
-        color: white;
-        border-radius: 30px;
-      }
-      &:active{
-        background-color: $mycolor-2;
-      }
+    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    &:hover{
+      background-color: $mycolor-1;
+      color: white;
+      border-radius: 30px;
+    }
+    &:active{
+      background-color: $mycolor-2;
+    }
   }
   .logoalle{
     p{
