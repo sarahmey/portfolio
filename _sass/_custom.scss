@@ -15,7 +15,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
   min-height: 100%;
   background-color:$color-white;
 }
@@ -32,11 +32,16 @@ footer {
   background-color: $color-grey-3;
   color: $color-white;
   margin-top: 50px;
+  .inhoud-footer{
+    padding:30px 50px;
+    padding-left:300px;
+  }
   a {
-    color: $mycolor-3;
+    color: $mycolor-1;
     text-decoration: underline;
     &:hover {
-      text-decoration: none; 
+      text-decoration: none;
+      color: $mycolor-2; 
     }
   }
 }
@@ -147,9 +152,10 @@ main[class^="col"]{
 
 
 .inhoud{
-  margin-left: 100px;
+  margin-left: 200px;
   margin-right: 200px;
   margin-top:50px;
+  max-width: 800px;
 }
 
 
