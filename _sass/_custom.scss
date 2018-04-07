@@ -109,8 +109,6 @@ footer {
     background: $mycolor-2;
   }
 }
-
-
 // EINDE SCROLLBAR //
 
 .kleuren{
@@ -146,39 +144,52 @@ img{
   margin: 5px 0;
 }
 
-
+// DOWNLOADS //
 .download{
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
   border: 3px solid $mycolor-3;
-  border-radius: 25px;
+  border-radius: 28px;
   a{
     text-decoration:none;
-    &:hover{
-      text-decoration: underline;
-    }
   }
   img{
       margin-right: 15px;
       width: 20px;
   }
   p{
-      margin-bottom: 0.5rem;
-      padding: 0 10px;
+      margin-bottom: 0;
+      padding: 10px 20px;
       &:hover{
-        background-color: $mycolor-3;
+        background-color: $mycolor-1;
         color: white;
+        border-radius: 30px;
+      }
+      &:active{
+        background-color: $mycolor-2;
       }
   }
   .logoalle{
     p{
+      font-size: 1.2rem;
       background-color: $mycolor-3;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
+      border-top-left-radius: 21px;
+      border-top-right-radius: 21px;
       color: white;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &:hover{
+        background-color: $mycolor-2;
+        color: white;
+        border-radius:0;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+      }
     }
   }
 }
+
+
 
 main[class^="col"]{
   position: relative;
