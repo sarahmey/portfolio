@@ -2,6 +2,8 @@
  -------------------------------------------------- */
  @media (min-width: 768px) {
     .custom-nav-ver {
+        -webkit-transition: all 0.5s ease-in-out; /* Safari */
+        transition: all 0.5s ease-in-out;
         background-color:$color-grey-1;
         padding: 0;
         height: 100%;
@@ -12,11 +14,18 @@
         .navbar-collapse {
             width:100%;
             position:fixed;
-            
-            overflow: auto;
-            height: 60%; /* NOG AANPASSEN!! */
+            height: 60%; /* NOG AANPASSEN!! AAAAAA */
             width: 250px;
             top: 200px;
+
+            //vanaf hier
+            -webkit-transition: all 0.5s ease-in-out; /* Safari */
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                overflow: auto;
+            }
+
+            // tot hier wegdoen als het niet gefikst geraakt
         }
         .dropdown-menu {
             position: static !important;
@@ -28,7 +37,7 @@
         }
         .navbar-nav {
             width: 100%;
-            margin-top:10px;
+            margin-top:0;
             margin-bottom:30px;
         }
         .nav-item {
