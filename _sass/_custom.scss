@@ -172,9 +172,8 @@ img{
 // DOWNLOADS //
 .download{
   margin-top:30px;
+  margin-bottom: 30px;
   border: 3px solid $mycolor-3;
-  border-radius: 28px;
-  padding-bottom: 15px;
   a{
     text-decoration:none;
   }
@@ -202,8 +201,6 @@ img{
     p{
       font-size: 1.2rem;
       background-color: $mycolor-3;
-      border-top-left-radius: 21px;
-      border-top-right-radius: 21px;
       color: white;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -211,8 +208,6 @@ img{
         background-color: $mycolor-2;
         color: white;
         border-radius:0;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
       }
       &:active{
         background-color: $mycolor-3;
@@ -220,7 +215,6 @@ img{
     }
   }
 }
-
 
 
 main[class^="col"]{
