@@ -1,26 +1,46 @@
-// direct browser to top right away
-if (window.location.hash)
-    scroll(0,0);
-// takes care of some browsers issue
-setTimeout(function(){scroll(0,0);},1);
-
-$(function(){
-    //your current click function
-    $('.scroll').on('click',function(e){
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop:$($(this).attr('href')).offset().top + 'px'
-        },1000,'swing');
-    });
-    
-    // if we have anchor on the url (calling from other page)
-    if(window.location.hash){
-        // smooth scroll to the anchor id
-        $('html,body').animate({
-            scrollTop:$(window.location.hash).offset().top + 'px'
-        },1000,'swing');
-    }
+$('a').click(() => {   // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : location.hash = this.getAttribute('href')    // Scroll to juiste hoogte pagina
+    }, 500);
+    console.log("TEST123");
 });
+
+// document.querySelectorAll('#toc a[href^="#"]').forEach((a) => {
+//     a.addEventListener('click', (e) => {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//         console.log('CLICKED');
+//     });
+//     console.log('TEST');
+// });
+
+
+// // direct browser to top right away
+// if (window.location.hash)
+//     scroll(0,0);
+// // takes care of some browsers issue
+// setTimeout(function(){scroll(0,0);},1);
+
+// $(function(){
+//     //your current click function
+//     $('.scroll').on('click',function(e){
+//         e.preventDefault();
+//         $('html,body').animate({
+//             scrollTop:$($(this).attr('href')).offset().top + 'px'
+//         },1000,'swing');
+//     });
+    
+//     // if we have anchor on the url (calling from other page)
+//     if(window.location.hash){
+//         // smooth scroll to the anchor id
+//         $('html,body').animate({
+//             scrollTop:$(window.location.hash).offset().top + 'px'
+//         },1000,'swing');
+//     }
+// });
 
 
 

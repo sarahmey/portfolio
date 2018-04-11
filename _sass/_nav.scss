@@ -2,6 +2,14 @@
  -------------------------------------------------- */
  @media (min-width: 768px) {
     .custom-nav-ver {
+        ::-webkit-scrollbar-thumb {
+            visibility: hidden;
+        }
+        &:hover{
+            ::-webkit-scrollbar-thumb {
+                visibility:visible;
+            }
+        }
         -webkit-transition: all 0.5s ease-in-out; /* Safari */
         transition: all 0.5s ease-in-out;
         background-color:$color-grey-1;
@@ -14,18 +22,11 @@
         .navbar-collapse {
             width:100%;
             position:fixed;
-            height: 70%; /* NOG AANPASSEN!! AAAAAA */
+            height: calc(100% - 210px); /* NOG AANPASSEN!! AAAAAA */
             width: 250px;
             top: 200px;
             margin-top:6px;
-
-            //vanaf hier
-            -webkit-transition: all 0.5s ease-in-out; /* Safari */
-            transition: all 0.5s ease-in-out;
-            &:hover{
-                overflow: auto;
-            }
-            // tot hier wegdoen als het niet gefikst geraakt
+            overflow: auto;
         }
         .dropdown-menu {
             position: static !important;
