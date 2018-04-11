@@ -69,12 +69,16 @@
             text-indent: -999px;
             height: 180px;
             width: 100%;
+            &:active{
+                background-color: transparent;
+            }
         }
         .dropdown-item{
             padding-top: 0.1rem; padding-bottom: 0.1rem;
             margin-left:20px;
             padding-left:20px;
             font-size:0.8rem;
+            width: auto;
         }
         .dropdown-item, .nav-link{
             -webkit-transition: all 0.5s ease-in-out; /* Safari */
