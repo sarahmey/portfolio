@@ -5,18 +5,25 @@
                 <h2>Contact</h2>
 
                 <form action="https://formspree.io/sarahmeysman@hotmail.com" method="POST">
+                    <div>
+                        <label for="naam">Je naam</label>
+                        <input id="naam" type="text" name="name">
+                    </div>
+
+                    <div>
+                        <label for="mail">Je e-mailadres</label>
+                        <input id="mail"  type="email" name="_replyto">
+                    </div>
                     
-                    <label for="naam">Je naam</label>
-                    <input id="naam" type="text" name="name">
+                    <div>
+                        <label for="onderwerp">Onderwerp</label>
+                        <input id="onderwerp" type="text" name="_subject">
+                    </div>
                     
-                    <label for="mail">Je e-mailadres</label>
-                    <input id="mail"  type="email" name="_replyto">
-                    
-                    <label for="onderwerp">Onderwerp</label>
-                    <input id="onderwerp" type="text" name="_subject">
-                    
-                    <label for="bericht">Je bericht</label>
-                    <textarea id="bericht" name="message"></textarea>
+                    <div>
+                        <label for="bericht">Je bericht</label>
+                        <textarea id="bericht" name="message"></textarea>
+                    </div>
                     
                     <input type="submit" value="Send">
 
