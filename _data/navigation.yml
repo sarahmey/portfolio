@@ -7,31 +7,25 @@
 #   permalink: /index 
 #   # fa-icon: icon-info
 
-- name: Huisstijlelementen
-  description: Huisstijlelementen
-  folder: pages/huisstijlelementen/
-  permalink: huisstijlelementen/
+# - name: Huisstijlelementen
+#   description: Huisstijlelementen
+#   folder: pages/huisstijlelementen/
+#   permalink: huisstijlelementen/
 
-- name: Logo
-  description: Logo
-  folder: pages/logo/
-  permalink: logo/
-  # fa-icon: icon-graduation-cap
+# - name: Logo
+#   description: Logo
+#   folder: pages/logo/
+#   permalink: logo/
+#   # fa-icon: icon-graduation-cap
 
-- name: Toepassingen
-  description: Toepassingen
-  folder: pages/toepassingen/
-  permalink: toepassingen/
-  # fa-icon: icon-info
-
-# - name: Styleguide
-#   description: Stijlgids voor de Huistijlgids
-#   # folder: pages/stijlgids
-#   permalink: /stijlgids
+# - name: Toepassingen
+#   description: Toepassingen
+#   folder: pages/toepassingen/
+#   permalink: toepassingen/
 #   # fa-icon: icon-info
 
-- name: Bronbestanden
-  description: Bronbestanden
-  folder: pages/bronbestanden/
-  permalink: bronbestanden/
-  # fa-icon: icon-info
+# - name: Bronbestanden
+#   description: Bronbestanden
+#   folder: pages/bronbestanden/
+#   permalink: bronbestanden/
+#   # fa-icon: icon-info
