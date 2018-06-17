@@ -1,31 +1,36 @@
 <footer class="container-fluid bh-absolute-bottom">
     <div class="row justify-content-center">
-        <div class="inhoud-footer col-12 col-md-8 col-lg-6 text-left">
+        <div class="inhoud-footer col-12 col-lg-8 col-xl-6 text-left">
                 
                 <h2>Contact</h2>
 
                 <form action="https://formspree.io/sarahmeysman@hotmail.com" method="POST">
                     <div>
+                        
+                        <input id="naam" type="text" name="name" required placeholder=" ">
                         <label for="naam">Je naam</label>
-                        <input id="naam" type="text" name="name">
                     </div>
 
                     <div>
+                        
+                        <input id="mail"  type="email" name="_replyto" required placeholder=" ">
                         <label for="mail">Je e-mailadres</label>
-                        <input id="mail"  type="email" name="_replyto">
                     </div>
                     
                     <div>
+                        
+                        <input id="onderwerp" type="text" name="_subject" required placeholder=" ">
                         <label for="onderwerp">Onderwerp</label>
-                        <input id="onderwerp" type="text" name="_subject">
                     </div>
                     
                     <div>
+                        <textarea id="bericht" name="message" rows="5" required placeholder=" "></textarea >
                         <label for="bericht">Je bericht</label>
-                        <textarea id="bericht" name="message"></textarea>
                     </div>
                     
-                    <input type="submit" value="Send">
+                    <div id="verstuur">
+                        <input type="submit" value="Versturen">
+                    </div>
 
                     <input type="hidden" name="_next" value="https://site.io/thanks.html" /> <!-- EIGEN BEDANKINGSPAGINA MAKEN -->
                 </form>
