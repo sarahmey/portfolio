@@ -28,18 +28,23 @@ body {
 
 footer {
   padding-top:20px;
-  background-color: $mycolor-1;
-  color: $mycolor-5;
+  background-color: $mycolor-3;
+  color: white;
   margin-top: 50px;
   .inhoud-footer{
     padding:30px 50px;
   }
-  a {
-    color: $mycolor-1;
-    text-decoration: underline;
-    &:hover {
+  .social{
+    margin:auto;
+    a {
+      color: transparant;
       text-decoration: none;
-      color: $mycolor-2; 
+      text-transform:uppercase;
+      font-family: $myfont-family-title;
+      text-align:center;
+      &:hover {
+        color: white; 
+      }
     }
   }
 }
@@ -83,8 +88,8 @@ form{
       top:0;
     }
     &[type=submit]{
-      background-color:$mycolor-3;
-      color:white;
+      background-color:white;
+      color:$mycolor-3;
       border-bottom:none;
       top: 30%;
       margin-top: 0;
