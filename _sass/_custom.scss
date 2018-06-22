@@ -120,29 +120,6 @@ textarea {
 }
 
 
-// input[type=text], input[type=email], textarea, select {
-//   width: 100%;
-//   padding: 12px 20px;
-//   margin: 8px 0;
-//   display: inline-block;
-//   border: 0;
-//   border-bottom: 1px solid $mycolor-5;
-// }
-
-// input[type=submit] {
-//   width: 50%;
-//   background-color:  $mycolor-4;
-//   color: white;
-//   padding: 14px 20px;
-//   margin: 8px 0;
-//   border: none;
-//   cursor: pointer;
-// }
-
-// input[type=submit]:hover {
-//   background-color:  $mycolor-3;
-// }
-
 /* BACK TO TOP
 -------------------------
 */
@@ -265,6 +242,7 @@ textarea {
 
 img{
   margin: 5px 0;
+  max-width: 100%;
 }
 
 // DOWNLOADS //
@@ -328,20 +306,24 @@ main[class^="col"]{
 
 
 .inhoud, .containerhome {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top:50px;
-  max-width: 800px;
-}
-.overmezelf{
-  background-color: $mycolor-1;
-}
-.containerhome{
   margin-top:0;
-  padding-top:50px; padding-bottom:50px;
+  padding:50px 15px;
   width: 970px; // AANPASSEN BIJ ANDERE BREEDTE VAN SCHERM
+  max-width: 100vw;
   margin:0 auto;
 }
+.overmezelf{
+  background-color: $mycolor-0;
+  font-size:18px;
+  #hallo{
+    margin-bottom:50px;
+    img{
+      width:65%;
+    }
+    
+  }
+}
+
 
 
 nav[data-toggle='toc'] .nav .nav>li {

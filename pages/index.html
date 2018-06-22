@@ -5,30 +5,48 @@ title: Portfolio
 description: Persoonlijk portfolio van Sarah Meysman 
 ---
 <div class="overmezelf">
-    <div class="containerhome">
-        
-        <p>Hallo!</p>
+    <div class="containerhome row">
+        <div class="col-12" id="hallo">   
+                <img src="{{ '/images/hallo.png' | relative_url }}" alt="Hallo!">
+        </div>
 
-        <p>Ik ben Sarah Meysman, een enthousiaste, nieuwsgierige grafisch ontwerper die met een lach door het leven gaat. Naast ontwerpen spreek ik graag af met vrienden en engageer ik me als vrijwilliger. Zo ben ik animator, hoofdanimator of deel van de kookploeg bij Kazou. Daarnaast organiseer en begeleid ik activiteiten voor bewoners van een opvangcentrum voor asielzoekers bij Tamos. </p> 
+        <div class="col-12 col-sm-8">
+            
 
-        <p>Dit is mijn portfoliowebsite. Neus eens rond tussen alles wat ik al gemaakt heb en <a href="#footer">contacteer me</a> zeker als je meer over me te weten wil komen of als je vragen hebt. Geniet ervan!</p>
+            <p>Ik ben Sarah Meysman, een enthousiaste, nieuwsgierige grafisch ontwerper die met een lach door het leven gaat. Naast ontwerpen spreek ik graag af met vrienden en engageer ik me als vrijwilliger. Zo ben ik animator, hoofdanimator of deel van de kookploeg bij Kazou. Daarnaast organiseer en begeleid ik activiteiten voor bewoners van een opvangcentrum voor asielzoekers bij Tamos. </p> 
+
+            <p>Dit is mijn portfoliowebsite. Neus eens rond tussen alles wat ik al gemaakt heb en <a href="#footer">contacteer me</a> zeker als je meer over me te weten wil komen of als je vragen hebt. Geniet ervan!</p>
+        </div>
+        <div class="col-12 col-sm-4">
+            <img src="{{ '/images/sarah.png' | relative_url }}" alt="Sarah"> 
+        </div>
+
 
     </div>
 </div>
 
-<div class="inhoudhome"></div>
+<div class="inhoudhome">
+    <div class="containerhome row">
 
-    <p>Tekst over mezelf</p>
-    <p>Tekst over mezelf</p>
-    <p>Tekst over mezelf</p>
-    <p>Tekst over mezelf</p>
-    <p>Tekst over mezelf</p>
-    <p>Tekst over mezelf</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
-    <p>portfolioitems</p>
+        <div class="col-12 col-sm-6 col-md-4">
+            <a href="{{ site.baseurl }}/vriendenboekje">
+                <img src="{{ '/images/portfolio/vriendenboek/cover.jpg' | relative_url }}" alt="Vriendenboekje"> 
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <a href="{{ site.baseurl }}/hennieheimwee">
+                <img src="{{ '/images/portfolio/hennieheimwee/kalender.jpg' | relative_url }}" alt="Hennie Heimwee"> 
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <a href="{{ site.baseurl }}/tamos">
+                <img src="{{ '/images/tamos/1.jpg' | relative_url }}" alt="Tamos"> 
+            </a>
+        </div>
+
+        
+    </div>
+
 </div>
