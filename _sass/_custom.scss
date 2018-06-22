@@ -327,11 +327,20 @@ main[class^="col"]{
 }
 
 
-.inhoud{
+.inhoud, .containerhome {
   margin-left: 200px;
   margin-right: 200px;
   margin-top:50px;
   max-width: 800px;
+}
+.overmezelf{
+  background-color: $mycolor-1;
+}
+.containerhome{
+  margin-top:0;
+  padding-top:50px; padding-bottom:50px;
+  width: 970px; // AANPASSEN BIJ ANDERE BREEDTE VAN SCHERM
+  margin:0 auto;
 }
 
 
