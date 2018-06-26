@@ -23,6 +23,22 @@
                 <h1 class="text-center">{{page.title}}</h1>
                 <!-- <nav id="toc" data-toggle="toc"></nav> -->
                 <div class="inhoud">  {{ content }}  </div>
+
+                <div class="fotos">
+                    <!-- {% for image in "/images/portfolio/"+page.permalink %}
+                    
+                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        
+                    {% endfor %} -->
+
+                    {% assign filepath = 'images/portfolio/' | append: page.permalink %}
+                    {% for image in site.static_files %}
+                        
+                        {% if image.path contains filepath %}
+                            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        {% endif %}
+                    {% endfor %}
+                </div>
                 
             </div>
         </main>
