@@ -25,11 +25,7 @@
                 <div class="inhoud">  {{ content }}  </div>
 
                 <div class="fotos">
-                    <!-- {% for image in "/images/portfolio/"+page.permalink %}
                     
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-                        
-                    {% endfor %} -->
 
                     {% assign filepath = 'images/portfolio/' | append: page.permalink %}
                     {% for image in site.static_files %}
