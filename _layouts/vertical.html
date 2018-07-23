@@ -28,12 +28,21 @@
                     
 
                     {% assign filepath = 'images/portfolio/' | append: page.permalink %}
+                    <div class="grid">
+            
+                            <div class="grid-sizer"></div>
+                            <div class="grid-gutter"></div>
+
                     {% for image in site.static_files %}
                         
                         {% if image.path contains filepath %}
+                            
+                        <div class="grid-item">
                             <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                        </div>
                         {% endif %}
                     {% endfor %}
+                    </div>
                 </div>
                 
             </div>
