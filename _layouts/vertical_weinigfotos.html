@@ -15,79 +15,43 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="linkernavigatie">
-            {% include nav_hor.html %}
-        </div>
+        <!-- <div class="linkernavigatie">
+            {% include nav_ver_c.html %}
+        </div> -->
         <main class="col-12">
             <div class="rechts">
                 <h1 class="text-center">{{page.title}}</h1>
                 <!-- <nav id="toc" data-toggle="toc"></nav> -->
                 <div class="inhoud">  {{ content }}  </div>
 
-                <div class="fotos">
+                <div class="fotos weinigfotos">
                     
 
                     {% assign filepath = 'images/portfolio/' | append: page.permalink %}
-                    <div class="grid">
-            
-                            <div class="grid-sizer"></div>
-                            <div class="grid-gutter"></div>
+                    
 
                     {% for image in site.static_files %}
                         
                         {% if image.path contains filepath %}
                             
-                        <div class="grid-item">
+                        
                             <a href="{{ site.baseurl }}{{ image.path }}" data-lightbox="image-1" >
                                 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                             </a>
-                        </div>
+                        
                         {% endif %}
                     {% endfor %}
-                    </div>
-                </div>
+                   
                 
             </div>
         </main>
     </div>
 </div>
 
-<!-- <a href="{{ '/images/brochure/1.png' | relative_url }}" data-lightbox="image-1" data-title="Spread met primaire titel en quotes"><img class="kaderrand w-100" src="{{ '/images/brochure/1.png' | relative_url }}" alt="opbouw brochure"></a> -->
-
 
 
 {% include footer.html %}
 {% include scripts-bottom.html %}
-
-<script>
-    
-$(document).ready(function(){
-    
-    
-    $('.grid').masonry({
-        // set itemSelector so .grid-sizer is not used in layout 
-        itemSelector: '.grid-item',
-        // use element for option 
-        columnWidth: '.grid-sizer',
-        percentPosition: true,
-        fitWidth: true,
-        gutter:'.grid-gutter'
-        })
-    
-});
-</script>
-
-<script>
-    var $grid = $('.grid').imagesLoaded( function() {
-    // init Masonry after all images have loaded
-        $grid.masonry({
-        // options
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
-    }); 
-</script>
 
 </body>
 </html>
