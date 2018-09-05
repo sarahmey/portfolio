@@ -1,13 +1,14 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container"><!-- <<< verwijder als je navigatie over de ganse breedte wenst -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <!-- <div class="container"><<< verwijder als je navigatie over de ganse breedte wenst -->
         <a class="navbar-brand" href="{{ site.baseurl }}/index">Sarah Meysman</a>
+        <!-- de tekst bij a wordt vervangen door de afbeelding, de tekst wordt onzichtbaar (-999px) maar staat er nog  -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNavigation">
 
-        <ul class="navbar-nav mr-auto">
+        <!-- <ul class="navbar-nav mr-auto">
         {%- for nav-item in site.data.navigation %}
         
             {%- capture item_classes %}{% if page.url contains nav-item.permalink %}active{% endif %}{% endcapture %}
@@ -27,7 +28,7 @@
             {%- endif %}
 
         {%- endfor %}
-        </ul>
+        </ul> -->
 
         </div>
     </div><!-- /div.container -->
