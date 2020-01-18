@@ -1,0 +1,49 @@
+.btn {
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+
+  &.btn-primary {
+    background-color: $color-white;
+    border-color: $color-black;
+    color: $color-black;
+    border-width: $border-width;
+    position: relative;
+
+    &:before {
+      background-color: $color-black;
+      bottom: 0;
+      content: '';
+      height: calc(100% + #{$border-width} * 2);
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(4px, 4px);
+      -webkit-transition: transform 0.3s ease-in-out;
+      -moz-transition: transform 0.3s ease-in-out;
+      -ms-transition: transform 0.3s ease-in-out;
+      -o-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      width: calc(100% + #{$border-width} * 2);
+      z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+
+      &:before {
+        transform: translate(1px, 1px);
+      }
+    }
+
+    &:focus {
+      box-shadow: $focus-box-shadow;
+    }
+  }
+
+  &.btn-contact {
+    text-transform: uppercase;
+  }
+}
+

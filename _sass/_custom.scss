@@ -17,111 +17,20 @@ body {
   padding-bottom: 10rem;
   min-height: 100%;
   background-color:$color-white;
+  border: $border-width solid $border-color;
 }
 
-.bh-absolute-bottom {
-  position: absolute;
-  right: 0;
-  // bottom: 0;
-  left: 0;
+main {
+  margin-top: 30px;
 }
 
-footer {
-  padding-top:20px;
-  background-color: $mycolor-3;
-  color: white;
-  margin-top: 50px;
-  .inhoud-footer{
-    padding:30px 50px;
-  }
-  .social{
-    margin: auto;
-    img{
-      display: block;
-      margin: 0 auto;
-    }
-    a {
-      color: transparant;
-      text-decoration: none;
-      text-transform:uppercase;
-      font-family: $myfont-family-title;
-      text-align:center;
-      &:hover {
-        color: white; 
-      }
-    }
-  }
+.introtext .intro {
+  font-size: $font-size-base * 2;
+  font-weight: $font-weight-bold;
 }
 
-/* form */
-form{
-  box-sizing:border-box;
-  #verstuur{
-    display: inline-block;
-    margin:auto;
-  }
-  > div {
-    position: relative;
-    overflow: hidden;
-  }
-  input, textarea {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid $mycolor-5; 
-    background: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 10px 12px 30px;
-    outline: 0;
-    margin-bottom:20px;
-    &:valid {
-      // Hides the label
-      background: $mycolor-1; 
-    }
-    &:focus, &:not(:placeholder-shown) {
-      border-color: white;
-      padding: 0 6px 10px 6px;
-      margin-top: 30px; 
-    }
-    &:focus + label, &:not(:placeholder-shown) + label {
-      color: white;
-      font-size: 70%;
-      padding: 1px 6px;
-      top:0;
-    }
-    &[type=submit]{
-      background-color:white;
-      color:$mycolor-3;
-      border-bottom:none;
-      top: 30%;
-      margin-top: 0;
-      padding: 8px;
-      border-radius: 8px;
-    }
-  }
-}
-label {
-  transition: // not padding
-    background 0.2s,
-    color 0.2s,
-    top 0.2s,
-    bottom 0.2s,
-    right 0.2s,
-    left 0.2s;
-  position: absolute;
-  color: $mycolor-5;
-  padding: 7px 6px;
-  top: 20px; 
-  bottom:0; left:0;
-  width:100%;
-}
-textarea {
-  display: block;
-  resize: none;
-  margin: auto;
-}
+
+
 
 
 /* BACK TO TOP
@@ -158,9 +67,9 @@ textarea {
     transition: all 0.3s ease;
     top:0;
   }
-  
+
   &:hover {
-    background-color:$mycolor-4; 
+    background-color:$mycolor-2;
     svg{
       position:relative;
       top:-5px;
@@ -168,222 +77,6 @@ textarea {
   }
 }
 
-//    SCROLLBAR   //
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $color-grey-1; 
-  border-radius:4px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  // -webkit-transition: all 0.3s ease;
-  // -moz-transition: all 0.3s ease;
-  // -ms-transition: all 0.3s ease;
-  // -o-transition: all 0.3s ease;
-  // transition: all 0.3s ease; // waarom werkt dit niet??
-  background: $mycolor-2;
-  border-radius: 4px; 
-  &:hover{
-    background: $mycolor-4;
-  }
-}
-// EINDE SCROLLBAR //
-
-.kleuren{
-  
-  width: 100%;
-  padding: 20px;
-  color: $color-white;
-  margin-bottom: 20px;
-  ul {
-    margin: 10px auto 20px;;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    li{
-      display: inline;
-      border-left: 1px solid white;
-      padding: 0 15px;
-      &:before{ content: ''; margin:0; }
-      &:first-child{
-        border-left: none;
-      }
-      strong{
-        padding-right:10px;
-      }
-    }
-  }
-  
-  h3{
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  a{
-    color: $color-grey-1;
-  }
-}
-#kleur-blauw{
-  background-color: $clientcolor-1;
-}
-#kleur-geel{
-  background-color: $clientcolor-2;
-}
-#kleur-groen{
-  background-color: $clientcolor-3;
-}
-#kleur-rood{
-  background-color: $clientcolor-4;
-}
-#kleur-oranje{
-  background-color: $clientcolor-5;
-}
-
-
 img{
-  margin: 5px 0;
   max-width: 100%;
-}
-
-// DOWNLOADS //
-.download{
-  margin:30px auto;
-  max-width:500px;
-  border: 3px solid $mycolor-3;
-  a{
-    text-decoration:none;
-  }
-  img{
-      margin-right: 15px;
-      width: 20px;
-  }
-  p{
-    -webkit-transition: all 0.3s ease-in-out; /* Safari */
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 0;
-    padding: 10px 20px;
-    z-index:-1;
-    border-radius: 30px;
-    &:hover{
-      background-color: $mycolor-1;
-      color: white;
-    }
-    &:active{
-      background-color: $mycolor-2;
-      border-radius:0;
-    }
-  }
-  .logoalle{
-    p{
-      font-size: 1.2rem;
-      background-color: $mycolor-3;
-      color: white;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border-radius: 0;
-      &:hover{
-        background-color: $mycolor-2;
-        color: white;
-        border-radius:0;
-      }
-      &:active{
-        background-color: $mycolor-3;
-      }
-    }
-  }
-}
-
-
-main[class^="col"]{
-  position: relative;
-  margin-bottom: 50px;
-  padding: 0;
-  margin-right:0;
-  margin-left:0;
-  // padding-right:0; padding-left:250px;;
-  width: 100%;
-}
-
-
-.inhoud, .containerhome {
-  margin-top:0;
-  padding:50px 15px;
-  width: 970px; // AANPASSEN BIJ ANDERE BREEDTE VAN SCHERM
-  max-width: 100vw;
-  margin:0 auto;
-}
-.overmezelf{
-  background-color: $mycolor-0;
-  font-size:16px;
-  #hallo{
-    margin-bottom:50px;
-    img{
-      width:65%;
-      max-width: 400px;
-    }
-    
-  }
-}
-.grid-sizer, .grid-item{
-  width: 32%;
-}
-.grid-gutter{
-  width:1.333%;
-}
-.grid-item{
-  float: left;
-}
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.grid{
-  width: 100%;
-  margin: 20px auto;
-}
-
-.rechts{
-  h1{
-      margin-top:50px;
-      height: 200px;
-  }
-}
-
-
-nav[data-toggle='toc'] .nav .nav>li {
-  display: none;
-}
-
-.donts .col-6{
-  margin-top:30px;
-  font-size: 0.9rem;
-}
-
-.kaderrand{
-  border:1px solid $color-grey-2;
-}
-strong{
-  color:$mycolor-4;
-}
-
-.instatekst{
-  color:$mycolor-3;
-  margin-left:20px;
-  margin-right:20px;
-  margin-top:40px;
-  font-weight: 600;
-
-}
-
-.tweefotos{
-  img{
-    width: 47%;
-    margin: 1.33%
-  }
 }

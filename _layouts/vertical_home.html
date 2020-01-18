@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
-    <title> Sarah Meysman | {{ page.title }}</title>
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}">
-</head>
-<body data-spy="scroll" data-target="#toc">  
+{% include head.html %}
+<body data-spy="scroll" data-target="#toc">
 
-<div class="container-fluid">
-    <div class="row">
-
-        <main class="col-12">
-            <div class="rechts">
-
-                <div class="inhoud_home">  {{ content }}  </div>
-                
-            </div>
-        </main>
+<main>
+    <div class="container-fluid">
+        {{ content }}
     </div>
-</div>
+</main>
 
 {% include footer.html %}
 {% include scripts-bottom.html %}
 
 <script>
-    
+
 $(document).ready(function(){
-    
-    
+
+
     $('.grid').masonry({
-        // set itemSelector so .grid-sizer is not used in layout 
+        // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.grid-item',
-        // use element for option 
+        // use element for option
         columnWidth: '.grid-sizer',
         percentPosition: true,
         fitWidth: true,
         gutter:'.grid-gutter'
       })
- 
+
 });
 </script>
 
@@ -56,7 +39,7 @@ $(document).ready(function(){
             columnWidth: '.grid-sizer',
             percentPosition: true
         });
-    }); 
+    });
 </script>
 
 </body>

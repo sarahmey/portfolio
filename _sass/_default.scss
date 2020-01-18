@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-weight: $font-weight-bold;
     font-size: 5rem;
-    color: $mycolor-4;
+    color: $mycolor-2;
     padding-top:3.2rem;
     margin-bottom:0;
     height:206px;
@@ -31,7 +31,7 @@ h2 {
 
 h3{
     font-weight: $font-weight-bold;
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     margin: 2rem 0 1rem;
 }
 
@@ -39,29 +39,15 @@ h4, h5, h6 {
     font-size: 1rem;
     margin: 2rem 0 0;
 }
-a {
-    color: $body-link;
-    text-decoration: underline;
-    &:hover{
-        color: $body-link;
-        text-decoration: none;
-    }
-    &:active{
-        background-color: $body-link;
-        color: $color-white;
-    }
-    &:focus{
-        outline: 0;
-    }
-}
+
 blockquote {
     padding-left: 24px;
     border-left: 2px solid $mycolor-3;
 }
 
 // ongeordende lijstjes met een ander symbool of kleur
-main ul {
-  list-style: none;  
+/*main ul {
+  list-style: none;
   margin: 0 0 1em;
   padding: 0;
   li {
@@ -71,37 +57,37 @@ main ul {
         content:'\2022';
         color: $mycolor-2;
         margin-right: 18px;
-    }    
+    }
   }
-}
+}*/
 
 //geordende lijstjes met een ander symbool of kleur
 main ol {
-    list-style: none;  
-    margin: 0 0 1em;
-    padding: 0;
-    counter-reset: i 0;
-    li {
-      padding-left: 25px;
-      text-indent: -25px;
-      margin-bottom: 0.5rem;
-      &:before {
-        counter-increment: i;
-        content: counter(i);    
-        padding: 3px 6px;
-        margin-right: 5px;
-        border-radius: 5px;
-        background-color: $mycolor-3;
-        color: $color-white;
-        font-family: $myfont-family-title;
-        font-weight: $font-weight-bold;
-      }    
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+  counter-reset: i 0;
+  li {
+    padding-left: 25px;
+    text-indent: -25px;
+    margin-bottom: 0.5rem;
+    &:before {
+      counter-increment: i;
+      content: counter(i);
+      padding: 3px 6px;
+      margin-right: 5px;
+      border-radius: 5px;
+      background-color: $mycolor-3;
+      color: $color-white;
+      font-family: $myfont-family-title;
+      font-weight: $font-weight-bold;
     }
   }
+}
 
-//forms 
+//forms
 button, a.btn {
-    
+
     &:hover{}
     &:active{}
     &:focus{}
