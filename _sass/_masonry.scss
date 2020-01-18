@@ -1,0 +1,52 @@
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  float: left;
+  padding: 15px;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.333333%;
+  }
+}

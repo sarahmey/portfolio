@@ -1,5 +1,23 @@
 .tab-content {
   margin-top: 30px;
+
+  .tab-pane-text {
+    margin-bottom: 20px;
+  }
+
+  .tab-pane-photos {
+    margin: 0 -15px;
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+
+  .tab-content .tab-pane {
+
+    .tab-pane-text {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media (min-width: $breakpoint-md) {
@@ -12,6 +30,10 @@
 @media (min-width: $breakpoint-xl) {
 
   .tab-content .tab-pane {
-    padding: 0 30px;
+
+    .tab-pane-text {
+      padding: 0 30px;
+      margin-bottom: 50px;
+    }
   }
 }
