@@ -2,13 +2,29 @@
   border-width: $border-width 0;
   border-color: $border-color;
   border-style: solid;
-  margin-top: 30px;
+  margin-top: 34px;
+
+  &:after {
+    background: linear-gradient(90deg, rgba($color-white,0) 0%, rgba($color-white,1) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+  }
 }
 
 .nav-tabs {
+  position: relative;
+
+  .nav-item:first-of-type .nav-link {
+    padding-left: 4px;
+  }
 
   .nav-link {
     border: none;
+    padding: 30px 15px;
 
     &:focus {
       outline: none;
