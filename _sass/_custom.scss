@@ -12,11 +12,11 @@ html {
 }
 
 body {
-  position: relative;
-  margin: 0;
-  min-height: 100%;
   background-color:$color-white;
   border: $border-width solid $border-color;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
 }
 
 main {
@@ -29,7 +29,38 @@ main {
 }
 
 
+@media (min-width: $breakpoint-md) {
 
+  .introduction-image {
+    margin: 30px 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .info-navtabs-column,
+  .portfolio-content-column {
+    height: calc(100vh - #{$border-width} * 2);
+    max-height: calc(100vh - #{$border-width} * 2);
+    overflow-y: scroll;
+  }
+
+  .portfolio-content-column {
+    border-left: $border-width $border-color solid;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+
+  .introduction-image {
+    margin: 30px auto;
+  }
+
+  .info-wrapper {
+    padding: 0 30px;
+  }
+}
 
 
 /* BACK TO TOP

@@ -1,7 +1,17 @@
 .tab-content {
   margin-top: 30px;
+}
 
-  .tab-pane {
+@media (min-width: $breakpoint-md) {
 
+  .tab-content .tab-pane {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+
+  .tab-content .tab-pane {
+    padding: 0 30px;
   }
 }
