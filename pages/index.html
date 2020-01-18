@@ -17,7 +17,7 @@ description: Persoonlijk portfolio van Sarah Meysman
           </div>
           <div class="col-8 col-md-12 introtext"> <!-- sarah infotext + socials wrapper  -->
             <p class="intro">Hey, ik ben Sarah</p>
-            <p>[&nbsp;levensgenieter • grafisch ontwerper • frontend developer • webdesigner • UI/UX designer • danser&nbsp;]</p>
+            <p>levensgenieter • grafisch ontwerper • frontend developer • webdesigner • UI/UX designer • danser</p>
             <!--<p>een enthousiaste, nieuwsgierige grafisch ontwerper die met een lach door het leven gaat. Naast ontwerpen spreek ik graag af met vrienden en engageer ik me als vrijwilliger. Zo ben ik animator, hoofdanimator of deel van de kookploeg bij Kazou vzw.</p>-->
 
             <a href="mailto:sarahmeysman@hotmail.com" class="btn btn-primary btn-contact">Contacteer me</a>
@@ -71,7 +71,19 @@ description: Persoonlijk portfolio van Sarah Meysman
   <div class="col-md-6">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        1
+        <h2>Typoscape</h2>
+        <p>Bouw een landschap op uit letters. Zo luidde de opdracht 'typoscape'. Na een gekozen uitzicht, Jesus in Rio de Janeiro, te hebben geanalyseerd en getekend, zocht ik naar de letters die het landschap het best in beeld zouden kunnen brengen. Het werd een combinatie van geschreefde en schreefloze letters, en verschillende tinten. Eerst getekend met de hand, erna digitaal uitgewerkt. ​</p>
+        <p> In de letters zijn verschillende woorden terug te vinden die informatie geven, zoals de plaats, de ontwerper en de bouwer van het standbeeld.</p>
+
+        <div class="row">
+          {% for image in site.static_files %}
+          {% if image.path contains 'images/portfolio/typoscape' %}
+          <div class="col-sm-6 col-xl-4">
+            <img class="mb-3" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         2

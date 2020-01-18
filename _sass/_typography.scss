@@ -1,0 +1,21 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 5rem;
+  color: $mycolor-2;
+  padding-top:3.2rem;
+  margin-bottom:0;
+  height:206px;
+}
+h2 {
+  font-size: 3rem;
+  margin: 2rem 0 1rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
