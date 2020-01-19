@@ -65,6 +65,14 @@ main {
 }
 
 
+@media (min-width: $breakpoint-md) and (max-height: 550px) {
+
+  .introduction-image {
+    width: 100px;
+  }
+}
+
+
 /* BACK TO TOP
 -------------------------
 */
