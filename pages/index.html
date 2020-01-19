@@ -34,8 +34,8 @@ description: Persoonlijk portfolio van Sarah Meysman
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                  <img src="https://placehold.it/80x80" alt="">
+                <a class="nav-link" id="schetboeken-tab" data-toggle="tab" href="#schetboeken" role="tab" aria-controls="schetboeken" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/schetboeken.jpg' | relative_url }}" alt="Schetboeken">
                 </a>
               </li>
               <li class="nav-item">
@@ -87,7 +87,9 @@ description: Persoonlijk portfolio van Sarah Meysman
             {% for image in site.static_files %}
               {% if image.path contains 'images/portfolio/typoscape' %}
                 <div class="grid-item">
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                  <a data-fancybox href="{{ site.baseurl }}{{ image.path }}">
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                  </a>
                 </div>
               {% endif %}
             {% endfor %}
@@ -95,8 +97,26 @@ description: Persoonlijk portfolio van Sarah Meysman
         </div>
       </div>
 
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        2
+      <div class="tab-pane fade" id="schetboeken" role="tabpanel" aria-labelledby="schetboeken-tab">
+        <div class="tab-pane-text">
+          <h2>Schetboeken</h2>
+          <p>In mijn schetsboeken staan vaak wat krabbeltjes. Het ene al beter gelukt dan het andere. Hier wil ik graag enkele  pagina's uit mijn schetsboeken met jullie delen. </p>
+        </div>
+        <div class="tab-pane-photos">
+          <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-gutter"></div>
+            {% for image in site.static_files %}
+              {% if image.path contains 'images/portfolio/schetsboeken' %}
+                <div class="grid-item">
+                  <a data-fancybox href="{{ site.baseurl }}{{ image.path }}">
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                  </a>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       </div>
 
       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
