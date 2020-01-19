@@ -40,6 +40,17 @@
     &:focus {
       box-shadow: $focus-box-shadow;
     }
+
+    &:not(:disabled):not(.disabled):active {
+      background-color: $color-black;
+      border-color: lighten($color-black, 10%);
+
+      &:focus {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
   }
 
   &.btn-contact {
@@ -47,3 +58,47 @@
   }
 }
 
+
+/* BACK TO TOP
+-------------------------
+*/
+#to-top {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $color-black;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+
+  svg{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    top:0;
+  }
+
+  &:hover {
+    background-color: lighten($color-black, 10%);
+
+    svg{
+      position:relative;
+      top:-5px;
+    }
+  }
+}

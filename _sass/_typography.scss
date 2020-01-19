@@ -12,10 +12,10 @@ h1 {
 }
 h2 {
   font-size: 3rem;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0;
 
   span {
-    background-color: $mycolor-0;
+    border-bottom: $border-width $mycolor-0 solid;
   }
 }
 
