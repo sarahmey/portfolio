@@ -16,8 +16,8 @@ description: Persoonlijk portfolio van Sarah Meysman
             <img class="introduction-image" src="{{ '/images/dummy.svg' | relative_url }}" alt="tekening dummy">
           </div>
           <div class="col-8 col-md-12 introtext">
-            <p class="intro">Hey, ik ben Sarah</p>
-            <p>levensgenieter • grafisch ontwerper • frontend developer • groepsbeest • webdesigner • UI/UX designer • danser</p>
+            <p class="intro">Hallo, ik ben Sarah Meysman</p>
+            <p>levensgenieter&nbsp;• grafisch ontwerper&nbsp;• frontend developer&nbsp;• groepsbeest&nbsp;• webdesigner&nbsp;• UI/UX designer&nbsp;• danser</p>
 
             <a href="mailto:sarahmeysman@hotmail.com" class="btn btn-primary btn-contact">Contacteer me</a>
           </div>
@@ -30,6 +30,16 @@ description: Persoonlijk portfolio van Sarah Meysman
               <li class="nav-item">
                 <a class="nav-link active" id="replaytoddler-tab" data-toggle="tab" href="#replaytoddler" role="tab" aria-controls="replaytoddler" aria-selected="true">
                   <img src="{{ '/images/portfolio/thumbnails/replaytoddler.jpg' | relative_url }}" alt="Replay Toddler">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="apotheekackerman-tab" data-toggle="tab" href="#apotheekackerman" role="tab" aria-controls="apotheekackerman" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/apotheekackerman.jpg' | relative_url }}" alt="Apotheek Ackerman">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="sumocoders-tab" data-toggle="tab" href="#sumocoders" role="tab" aria-controls="sumocoders" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/sumocoders.jpg' | relative_url }}" alt="SumoCoders">
                 </a>
               </li>
               <li class="nav-item">
@@ -53,6 +63,11 @@ description: Persoonlijk portfolio van Sarah Meysman
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="airservicehendrickx-tab" data-toggle="tab" href="#airservicehendrickx" role="tab" aria-controls="airservicehendrickx" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/airservicehendrickx.jpg' | relative_url }}" alt="Air Service Hendrickx">
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="diegodemeyer-tab" data-toggle="tab" href="#diegodemeyer" role="tab" aria-controls="diegodemeyer" aria-selected="false">
                   <img src="{{ '/images/portfolio/thumbnails/diegodemeyer.jpg' | relative_url }}" alt="Diego Demeyer">
                 </a>
@@ -63,8 +78,18 @@ description: Persoonlijk portfolio van Sarah Meysman
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="mbga-tab" data-toggle="tab" href="#mbga" role="tab" aria-controls="mbga" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/mbga.jpg' | relative_url }}" alt="Make Belgium Great Again">
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="tamos-tab" data-toggle="tab" href="#tamos" role="tab" aria-controls="tamos" aria-selected="false">
                   <img src="{{ '/images/portfolio/thumbnails/tamos.jpg' | relative_url }}" alt="Tamos">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="vettigevrijdag-tab" data-toggle="tab" href="#vettigevrijdag" role="tab" aria-controls="vettigevrijdag" aria-selected="false">
+                  <img src="{{ '/images/portfolio/thumbnails/vettigevrijdag.png' | relative_url }}" alt="Vettige Vrijdag">
                 </a>
               </li>
               <li class="nav-item">
@@ -392,6 +417,92 @@ description: Persoonlijk portfolio van Sarah Meysman
             {% if image.path contains 'images/portfolio/linoprint' %}
             <div class="grid-item">
               <a data-fancybox="gallery-linoprint" href="{{ site.baseurl }}{{ image.path }}">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+              </a>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="vettigevrijdag" role="tabpanel" aria-labelledby="vettigevrijdag-tab">
+        <div class="tab-pane-text">
+          <h2><span>Vettige vrijdag</span></h2>
+          <p>Ontwerp voor een interne applicatie voor SumoCoders. Op vettige vrijdag gaan ze daar niet rond met een papiertje om bestellingen op te nemen. Dat gaat natuurlijk via een applicatie en die kon een opfrissing gebruiken.</p>
+        </div>
+        <div class="tab-pane-photos">
+          {% for image in site.static_files %}
+          {% if image.path contains 'images/portfolio/vettigevrijdag' %}
+            <a data-fancybox="gallery-vettigevrijdag" href="{{ site.baseurl }}{{ image.path }}">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="mbga" role="tabpanel" aria-labelledby="mbga-tab">
+        <div class="tab-pane-text">
+          <h2><span>Make Belgium Great Again - game</span></h2>
+          <p>Ontwerp voor een <a href="https://vtm.be/make-belgium-great-again/help-frances-mee-in-deze-game">game</a> bij het vtm-programma Make Belgium Great Again. Vanaf heden kan je ook online België een beetje greater maken. Help de omaatjes veilig de straat oversteken en breek de highscores.</p>
+        </div>
+        <div class="tab-pane-photos">
+          {% for image in site.static_files %}
+          {% if image.path contains 'images/portfolio/mbga' %}
+          <a data-fancybox="gallery-mbga" href="{{ site.baseurl }}{{ image.path }}">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="airservicehendrickx" role="tabpanel" aria-labelledby="airservicehendrickx-tab">
+        <div class="tab-pane-text">
+          <h2><span>Air Service Hendrickx</span></h2>
+          <p>Ontwerp voor de nieuwe website van Air Service Hendrickx.</p>
+        </div>
+        <div class="tab-pane-photos">
+          {% for image in site.static_files %}
+          {% if image.path contains 'images/portfolio/airservicehendrickx' %}
+          <a data-fancybox="gallery-airservicehendrickx" href="{{ site.baseurl }}{{ image.path }}">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="apotheekackerman" role="tabpanel" aria-labelledby="apotheekackerman-tab">
+        <div class="tab-pane-text">
+          <h2><span>Apotheek Ackerman</span></h2>
+          <p>Ontwerp voor de nieuwe website van Apotheek Ackerman te Oostakker.</p>
+        </div>
+        <div class="tab-pane-photos">
+          {% for image in site.static_files %}
+          {% if image.path contains 'images/portfolio/apotheekackerman' %}
+          <a data-fancybox="gallery-apotheekackerman" href="{{ site.baseurl }}{{ image.path }}">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="sumocoders" role="tabpanel" aria-labelledby="sumocoders-tab">
+        <div class="tab-pane-text">
+          <h2><span>Toepassingen huisstijl SumoCoders</span></h2>
+          <p>Gebruik van de illustratieve huisstijl van SumoCoders in een heleboel toepassingen. Onder andere t-shirts, laptopstickers, visuals voor blogberichten en cases, muurschilderingen, fluohesje, kaartjes,...</p>
+        </div>
+        <div class="tab-pane-photos">
+          <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-gutter"></div>
+            {% for image in site.static_files %}
+            {% if image.path contains 'images/portfolio/sumocoders' %}
+            <div class="grid-item">
+              <a data-fancybox="gallery-sumocoders" href="{{ site.baseurl }}{{ image.path }}">
                 <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
               </a>
             </div>

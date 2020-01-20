@@ -23,3 +23,24 @@ h3{
   font-size: 1.5rem;
   margin: 2rem 0 1rem;
 }
+
+a {
+  border-bottom: 4px solid $mycolor-0;
+  color: $body-color;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus{
+    color: $body-color;
+    background-color: $mycolor-0;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: rgba($color-black, 0.5) auto 5px;
+  }
+}

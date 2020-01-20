@@ -14,8 +14,9 @@
   border-width: $border-width 0;
   border-color: $border-color;
   border-style: solid;
-  margin-top: 64px;
+  margin-top: 79px;
   padding-right: 0;
+  padding-left: 0;
 
   &:before {
     content: 'portfolio';
@@ -24,8 +25,9 @@
     font-weight: $font-weight-bold;
     position: absolute;
     text-transform: uppercase;
-    top: -50px;
+    top: -58px;
     z-index: -1;
+    left: 15px;
   }
 
   &:after {
@@ -44,9 +46,22 @@
   position: relative;
   border-bottom: none;
 
-  .nav-item:first-of-type .nav-link {
-    padding-left: 4px;
+  .nav-item:first-of-type {
+    margin-left: 15px;
+
+    .nav-link {
+      padding-left: 4px;
+    }
+
+    &.show .nav-link,
+    .nav-link.active {
+
+      &:after {
+        width: calc(100% - 19px);
+      }
+    }
   }
+
 
   .nav-link {
     background-color: transparent;
@@ -68,13 +83,7 @@
     border: $border-width $border-color solid;
   }
 
-  .nav-item:first-of-type.show .nav-link,
-  .nav-item:first-of-type .nav-link.active {
 
-    &:after {
-      width: calc(100% - 19px);
-    }
-  }
 
   .nav-item.show .nav-link,
   .nav-link.active {
@@ -104,9 +113,13 @@
 
 @media (min-width: $breakpoint-sm) {
 
-  .tabs-column:before {
-    font-size: 100px;
-    top: -95px;
+  .tabs-column {
+    margin-top: 94px;
+
+    &:before {
+      font-size: 100px;
+      top: -105px;
+    }
   }
 }
 
@@ -127,6 +140,7 @@
   .tabs-column {
     border-bottom: none;
     padding-right: 15px;
+    padding-left: 15px;
 
     &:after {
       content: none;
@@ -134,7 +148,7 @@
 
     &:before {
       font-size: 78px;
-      top: -75px;
+      top: -85px;
     }
   }
 
@@ -145,17 +159,22 @@
       padding: 9px;
     }
 
-    .nav-item:first-of-type .nav-link {
-      padding-left: 9px;
-    }
+    .nav-item:first-of-type {
+      margin-left: 0;
 
-    .nav-item:first-of-type.show .nav-link,
-    .nav-item:first-of-type .nav-link.active {
+      .nav-link {
+        padding-left: 9px;
+      }
 
-      &:after {
-        width: calc(100% - 18px);
+      &.show .nav-link,
+      .nav-link.active {
+
+        &:after {
+          width: calc(100% - 18px);
+        }
       }
     }
+
 
     .nav-item.show .nav-link,
     .nav-link.active {
@@ -221,5 +240,16 @@
 
   .nav-tabs .nav-item {
     margin: 0 auto;
+  }
+
+  .nav-tabs .nav-item:first-of-type {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $breakpoint-xl) and (max-height: 550px) {
+
+  .tabs-column:before {
+    font-size: 65px;
   }
 }
