@@ -1,8 +1,8 @@
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {   // If page is scrolled more than 50px
-        $('#to-top').fadeIn(200);    // Fade in the arrow
+        $('#to-top').fadeIn(300, 'linear');    // Fade in the arrow
     } else {
-        $('#to-top').fadeOut(200);   // Else fade out the arrow
+        $('#to-top').fadeOut(300);   // Else fade out the arrow
     }
 });
 $('#to-top').click(function() {   // When arrow is clicked
